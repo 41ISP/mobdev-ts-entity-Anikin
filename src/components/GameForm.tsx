@@ -29,7 +29,7 @@ export function GameForm() {
             <div className="row">
                 <label className="field">
                     Рейтинг: 0
-                    <input type="range" min={0} max={10} step={0.5} />
+                    <input type="range" min={0}  max={10} step={0.5} />
                 </label>
                 <label className="field">
                     Цена, €
