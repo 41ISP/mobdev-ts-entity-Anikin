@@ -20,14 +20,16 @@ export interface IGame
   description?: Description[]
   rating?: number
   price?: number
-  genre?: string
+  genre?: GameGenre
   releaseDate?: string
   createdAt: string
   updatedAt: string
   publishedAt: string
   cover?: IMedia
 }
-
+export type TGameInput = Omit<
+IGame, 'id' | 'documentId' | 'cover' | 'createdAt' | 'updatedAt' | 'publishedAt'
+>
 export interface Description 
 {
   type: string
